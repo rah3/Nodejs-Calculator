@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f2f5;
+    margin: 0;
+    gap: 20px;
+}
+
+.calc {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    color: #0f0;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 32px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #555;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #777;
+}
+
+.operator {
+    background: #f39c12;
+}
+
+.equal {
+    background: #27ae60;
+    grid-column: span 2;
+}
+
+.clear {
+    background: #c0392b;
+}
+
+.history-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 420px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.history-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.clear-history-btn {
+    display: none;
+    /* STUBBORN BUG FIX: Keep this hidden initially */
+    margin-top: auto;
+    padding: 10px;
+    background: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+}
