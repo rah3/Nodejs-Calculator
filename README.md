@@ -1,4 +1,4 @@
-﻿# ðŸ§® Node.js Calculator with History
+# ðŸ§® Node.js Calculator with History
 
 A clean, responsive web calculator built with **Node.js**, **Express**, and **Vanilla JavaScript**. This project features a dynamic history tracking system that clears itself on command.
 
@@ -50,3 +50,4 @@ function renderHistory() {
     clearHistoryBtn.style.display = (history.length >= 1) ? "block" : "none";
 }
 ```
+
