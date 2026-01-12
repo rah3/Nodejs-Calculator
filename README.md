@@ -21,28 +21,27 @@ A clean, responsive web calculator built with **Node.js**, **Express**, and **Va
 
 2. Install dependencies:
 
-```bash
-npm install
-
-```
+   ```bash
+   npm install
+   
+   ```
 
 
 3. Start the server:
-```bash
-npm run dev
+   ```bash
+   npm run dev
 
-```
+   ```
 
 
 4. Open your browser to http://localhost:3000
 
 ## Tech Stack
-
+The following technologies, languages and frameworks were used throughout the creation of this program:
 * **Backend:** Node.js, Express
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 
 ## Logic Highlight
-
 The history visibility is controlled by a state-check in script.js:
 
 ```javascript
@@ -52,7 +51,6 @@ function renderHistory() {
 ```
 
 ## Encoding
-
 This project uses **UTF-8 encoding** throughout.
 
 - Line endings are enforced as **LF** via `.gitattributes`
@@ -73,11 +71,4 @@ You should see:
 
 ```makefile
 modified: README.md
-```
-
-Then commit:
-
-```makefile
-git add README.md
-git commit -m "Docs: document UTF-8 encoding and emoji support"
 ```
